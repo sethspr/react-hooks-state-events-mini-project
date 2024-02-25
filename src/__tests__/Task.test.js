@@ -4,12 +4,12 @@ import App from "../components/App";
 import Task from "../components/Task";
 
 test("displays the task text", () => {
-  render(<Task text={"text!"} category={"category!"} />);
+  render(<Task text={"text"} category={"category"} />);
   expect(screen.queryByText("text!")).toBeInTheDocument();
 });
 
 test("displays the task category", () => {
-  render(<Task text={"text!"} category={"category!"} />);
+  render(<Task text={"text"} category={"category"} />);
   expect(screen.queryByText("category!")).toBeInTheDocument();
 });
 
